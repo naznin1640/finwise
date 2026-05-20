@@ -1,5 +1,8 @@
 import 'package:finwise/core/constants/constantcolors.dart';
-import 'package:finwise/features/onboarding/view/onboarding_view.dart';
+import 'package:finwise/core/widgets/button_widget.dart';
+import 'package:finwise/features/auth/views/create_account_view.dart';
+import 'package:finwise/features/auth/views/forgot_password.dart';
+import 'package:finwise/features/auth/views/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 class LaunchView extends StatelessWidget {
@@ -37,45 +40,27 @@ class LaunchView extends StatelessWidget {
             ),
           ),
           SizedBox(height: 40),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: ConstantColors.mainGreen,
-              fixedSize: Size(207, 45),
-            ),
-            onPressed: () {},
-            child: Text(
-              "Log in",
-              style: TextStyle(
-                color: ConstantColors.textClr,
-                fontFamily: "Poppins",
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-              ),
-            ),
-          ),
+         ButtonWidget(
+          onPressed:(){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => WelcomeView()));
+          } , 
+          text: "Log in", 
+          backgroundColor: ConstantColors.mainGreen),
+
           SizedBox(height: 12),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: ConstantColors.lighGreen,
-              fixedSize: Size(207, 45),
-            ),
-            onPressed: () {
-              Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (context) => OnboardingView()));
-            },
-            child: Text(
-              "Sign Up",
-              style: TextStyle(
-                color: ConstantColors.textClr,
-                fontFamily: "Poppins",
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-              ),
-            ),
-          ),
+
+           ButtonWidget(
+          onPressed:(){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CreateAccountView()));
+          } , 
+          text: "Sign Up", 
+          backgroundColor: ConstantColors.lighGreen),
           SizedBox(height: 12),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, 
+              MaterialPageRoute(builder: (context) => ForgotPassword()));
+            },
             child: Text(
               "Forgot Password?",
               style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:finwise/core/constants/constantcolors.dart';
+import 'package:finwise/features/auth/views/welcome_view.dart';
 import 'package:finwise/features/onboarding/provider/onboarding_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -44,12 +45,19 @@ class OnboardingView2 extends StatelessWidget {
               ],
             ),
             SizedBox(height: 60),
-            Text(
-              "NEXT",
-              style: TextStyle(
-                color: ConstantColors.textClr,
-                fontSize: 30,
-                fontWeight: FontWeight.w600,
+            GestureDetector(
+              onTap: (){
+                Navigator.pushAndRemoveUntil(context, 
+                MaterialPageRoute(builder: (context) => WelcomeView()), 
+                (route) => false);
+              },
+              child: Text(
+                "NEXT",
+                style: TextStyle(
+                  color: ConstantColors.textClr,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
             SizedBox(height: 20),
