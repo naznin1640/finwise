@@ -52,21 +52,23 @@ class TabbarView extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                color: ConstantColors.mainGreen,
-                height: 35,
-                width: 1,
-              ), 
-              Text("Monthly", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),),
-              Container(
-                color: ConstantColors.mainGreen,
-                height: 35,
-                width: 1,
-              ), 
-              Text("₹4.000,00", style: TextStyle(fontSize:15,fontWeight: FontWeight.w500, fontFamily: "Poppins" ),)
+              Container(color: ConstantColors.mainGreen, height: 35, width: 1),
+              Text(
+                "Monthly",
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+              ),
+              Container(color: ConstantColors.mainGreen, height: 35, width: 1),
+              Text(
+                "₹4.000,00",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "Poppins",
+                ),
+              ),
             ],
           ),
-           Row(
+          Row(
             spacing: 10,
             children: [
               Stack(
@@ -107,21 +109,24 @@ class TabbarView extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                color: ConstantColors.mainGreen,
-                height: 35,
-                width: 1,
-              ), 
+              Container(color: ConstantColors.mainGreen, height: 35, width: 1),
               Padding(
                 padding: const EdgeInsets.all(5),
-                child: Text("Pantry", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),),
+                child: Text(
+                  "Pantry",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                ),
               ),
-              Container(
-                color: ConstantColors.mainGreen,
-                height: 35,
-                width: 1,
-              ), 
-              Text("-₹100,00", style: TextStyle(fontSize:15,fontWeight: FontWeight.w500, fontFamily: "Poppins" ),)
+              Container(color: ConstantColors.mainGreen, height: 35, width: 1),
+              Text(
+                "-₹100,00",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "Poppins",
+                  color: ConstantColors.oceanBlue,
+                ),
+              ),
             ],
           ),
           Row(
@@ -172,8 +177,11 @@ class TabbarView extends StatelessWidget {
                   height: 35,
                   width: 1,
                 ),
-              ), 
-              Text("Rent", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),),
+              ),
+              Text(
+                "Rent",
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+              ),
               Padding(
                 padding: const EdgeInsets.only(left: 10),
                 child: Container(
@@ -181,8 +189,16 @@ class TabbarView extends StatelessWidget {
                   height: 35,
                   width: 1,
                 ),
-              ), 
-              Text("-₹674,40", style: TextStyle(fontSize:15,fontWeight: FontWeight.w500, fontFamily: "Poppins"),)
+              ),
+              Text(
+                "-₹674,40",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "Poppins",
+                  color: ConstantColors.oceanBlue,
+                ),
+              ),
             ],
           ),
         ],

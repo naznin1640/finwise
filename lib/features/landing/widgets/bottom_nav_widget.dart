@@ -25,9 +25,6 @@ class BottomNavWidget extends ConsumerWidget {
       unselectedFontSize: 12,
       type: BottomNavigationBarType.fixed,
       backgroundColor: ConstantColors.lighGreen,
-      selectedIconTheme: IconThemeData(
-        color: ConstantColors.mainGreen
-      ),
 
       onTap: (index) {
         ref.read(navIndexProvider.notifier).state = index;
@@ -38,7 +35,7 @@ class BottomNavWidget extends ConsumerWidget {
         BottomNavigationBarItem(icon: Icon(Icons.home, color: Color(0XFF052224)), label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.analytics, color: Color(0XFF052224)),label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.compare_arrows,color: Color(0XFF052224)),label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.dashboard,color: Color(0XFF052224)),label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.category_sharp,color: Color(0XFF052224)),label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.person,color: Color(0XFF052224)),label: ""),
       ],
     );

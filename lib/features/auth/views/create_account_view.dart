@@ -2,7 +2,6 @@ import 'package:finwise/core/constants/constantcolors.dart';
 import 'package:finwise/core/widgets/button_widget.dart';
 import 'package:finwise/core/widgets/textform_widget.dart';
 import 'package:finwise/features/auth/views/welcome_view.dart';
-import 'package:finwise/features/home/views/home_view.dart';
 import 'package:finwise/features/landing/view/landing_view.dart';
 import 'package:flutter/material.dart';
 
