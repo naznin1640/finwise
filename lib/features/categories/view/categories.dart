@@ -164,21 +164,21 @@ class Categoriesview extends StatelessWidget {
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(60),topRight: Radius.circular(60))
               ),
               child: Column(
-                spacing: 10,
+                spacing: 15,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Row(
-                    spacing: 15,
+                    spacing: 10,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 33, left: 36),
+                        padding: const EdgeInsets.only(top: 33, left: 37),
                         child: CategoryWidget(
                           ontap: () {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => FoodView()));
                           },
                           image: Padding(
-                          padding: const EdgeInsets.only(top: 22, left: 37, bottom: 22, right: 37),
-                          child: Image.asset("assets/images/Food.png", color: ConstantColors.backgroundColor,),
+                          padding: const EdgeInsets.only(top: 22, left: 30, bottom: 22, right: 30),
+                          child: Image.asset("assets/images/Food.png", color: ConstantColors.backgroundColor,width: 30,height:54),
                         ), text: 'Food',),
                       ),
                       Padding(
@@ -189,15 +189,15 @@ class Categoriesview extends StatelessWidget {
                           },
                           image:Padding(
                             padding: const EdgeInsets.only(top: 26, left: 30, bottom: 26, right: 30),
-                            child: Image.asset("assets/vectors/transport.png", height: 35,),
+                            child: Image.asset("assets/vectors/transport.png", height: 45, width: 44,),
                           ) , text: 'Transport',),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 33, right: 30),
                         child: CategoryWidget(
                           image:Padding(
-                            padding: const EdgeInsets.only(top: 26, left: 35, bottom: 26, right: 30),
-                            child: Image.asset("assets/vectors/medicine.png", height: 35,),
+                            padding: const EdgeInsets.only(top: 26, left: 30, bottom: 26, right: 30),
+                            child: Image.asset("assets/vectors/medicine.png", height: 46, width: 35,),
                           ) , text: 'Medicine',),
                       ),
                     ],
@@ -206,10 +206,10 @@ class Categoriesview extends StatelessWidget {
                     spacing: 15,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 33, left: 36),
+                        padding: const EdgeInsets.only(top: 33, left: 37),
                         child: CategoryWidget(image: Padding(
-                          padding: const EdgeInsets.only(top: 22, left: 36, bottom: 22, right: 37),
-                          child: Image.asset("assets/vectors/image.png", color: ConstantColors.backgroundColor,),
+                          padding: const EdgeInsets.only(top: 22, left: 30, bottom: 22, right: 30),
+                          child: Image.asset("assets/vectors/image.png", color: ConstantColors.backgroundColor,height: 53, width: 32,),
                         ), text: 'Groceries',),
                       ),
                       Padding(
@@ -217,14 +217,14 @@ class Categoriesview extends StatelessWidget {
                         child: CategoryWidget(
                           image:Padding(
                             padding: const EdgeInsets.only(top: 26, left: 30, bottom: 26, right: 30),
-                            child: Image.asset("assets/vectors/iconRent.png", height: 35,),
+                            child: Image.asset("assets/vectors/iconRent.png", height: 40,width: 47,),
                           ) , text: 'Rent',),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 33, ),
                         child: CategoryWidget(
                           image:Padding(
-                            padding: const EdgeInsets.only(top: 26, left: 35, bottom: 26, right: 30),
+                            padding: const EdgeInsets.only(top: 26, left: 35, bottom: 26, right: 29),
                             child: Image.asset("assets/vectors/gift.png", height: 35,),
                           ) , text: 'Gift',),
                       ),
@@ -234,7 +234,7 @@ class Categoriesview extends StatelessWidget {
                     spacing: 15,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 33, left: 36),
+                        padding: const EdgeInsets.only(top: 33, left: 37),
                         child: CategoryWidget(image: Padding(
                           padding: const EdgeInsets.only(top: 22, left: 32, bottom: 22, right: 32),
                           child: Image.asset("assets/vectors/savings.png", color: ConstantColors.backgroundColor,height: 39,width: 41,),

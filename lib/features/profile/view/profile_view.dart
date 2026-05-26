@@ -1,4 +1,6 @@
 import 'package:finwise/core/constants/constantcolors.dart';
+import 'package:finwise/features/profile/view/editprofile_view.dart';
+import 'package:finwise/features/profile/view/settings_view.dart';
 import 'package:finwise/features/profile/widgets/container_widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -82,17 +84,27 @@ class ProfileView extends StatelessWidget {
                           child: Column(
                             spacing: 34,
                             children: [
-                              ContainerWidgets(
-                                icon: Icon(Icons.person_outline_rounded,
-                                color: ConstantColors.backgroundColor,size: 28,),
-                                 text: "Edit profile"),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => EditprofileView()));
+                                },
+                                child: ContainerWidgets(
+                                  icon: Icon(Icons.person_outline_rounded,
+                                  color: ConstantColors.backgroundColor,size: 28,),
+                                   text: "Edit profile"),
+                              ),
 
                                  ContainerWidgets(
                                   icon: Icon(Icons.security_outlined, color: ConstantColors.backgroundColor,), 
                                   text: "Security"),
-                                  ContainerWidgets(icon: 
-                                  Icon(Icons.settings, color: ConstantColors.backgroundColor, size: 28,),
-                                   text: "Settings"),
+                                  InkWell(
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsView()));
+                                    },
+                                    child: ContainerWidgets(icon: 
+                                    Icon(Icons.settings, color: ConstantColors.backgroundColor, size: 28,),
+                                     text: "Settings"),
+                                  ),
                                    ContainerWidgets(
                                     icon: Icon(Icons.help_center, color: ConstantColors.backgroundColor,size: 28,),
                                      text: "Help"),

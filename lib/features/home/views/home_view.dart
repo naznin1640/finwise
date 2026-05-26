@@ -2,7 +2,6 @@ import 'package:finwise/core/constants/constantcolors.dart';
 import 'package:finwise/features/home/views/account_balance_view.dart';
 import 'package:finwise/features/home/views/quick_analysis_view.dart';
 import 'package:finwise/features/home/widgets/tabbar_view.dart';
-import 'package:finwise/features/profile/view/profile_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {

@@ -54,6 +54,7 @@ class SecurityPin extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 125, right: 125, top: 80),
               child:  ButtonWidget(
+                fontSize: 20,
           onPressed:(){
             Navigator.push(context, MaterialPageRoute(builder: (context) => NewpasswordView()));
           } , 
@@ -63,6 +64,7 @@ class SecurityPin extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 125, right: 125, top: 19),
               child:  ButtonWidget(
+                fontSize: 20,
           onPressed:(){
             Navigator.push(context, MaterialPageRoute(builder: (context) => CreateAccountView()));
           } , 

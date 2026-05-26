@@ -96,6 +96,7 @@ class WelcomeView extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 60, left: 111, right: 112),
                   child: ButtonWidget(
+                    fontSize: 20,
                     onPressed: () {
                       if(loginKey.currentState!.validate()){
                       Navigator.pushReplacement(
@@ -128,6 +129,7 @@ class WelcomeView extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 111, right: 112),
                   child: ButtonWidget(
+                    fontSize: 20,
                     onPressed: () {
                       Navigator.push(
                         context,

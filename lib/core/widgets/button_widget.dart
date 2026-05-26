@@ -5,11 +5,13 @@ class ButtonWidget extends StatelessWidget {
    ButtonWidget({super.key, 
    required this.onPressed, 
    required this.text, 
-   required this.backgroundColor});
+   required this.backgroundColor,
+   this.fontSize});
 
   VoidCallback onPressed;
   String text;
   Color backgroundColor;
+  double? fontSize;
 
 
   @override
@@ -26,7 +28,7 @@ class ButtonWidget extends StatelessWidget {
         color: ConstantColors.textClr,
                       fontFamily: "Poppins",
                       fontWeight: FontWeight.w600,
-                      fontSize: 20,
+                      fontSize: fontSize,
        ),),
      ));
   }

@@ -115,6 +115,7 @@ class CreateAccountView extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 13),
                         child: ButtonWidget(
+                          fontSize: 20,
                           onPressed: () {
                             Navigator.push(
                               context,

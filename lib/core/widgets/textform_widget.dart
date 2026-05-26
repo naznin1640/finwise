@@ -23,7 +23,7 @@ final FormFieldValidator<String>? validator;
                   hintText: hintText,
                   suffixIcon: suffix,
                   hintStyle: TextStyle(color:ConstantColors.darkGreen, 
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w300,
                   )
                 )
     );

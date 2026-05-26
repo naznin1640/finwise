@@ -95,6 +95,7 @@ class ForgotPassword extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 60, left: 120, right: 120),
                 child: ButtonWidget(
+                  fontSize: 20,
                   onPressed: () {
                     Navigator.push(
                       context,

@@ -41,6 +41,7 @@ class LaunchView extends StatelessWidget {
           ),
           SizedBox(height: 40),
          ButtonWidget(
+          fontSize: 20,
           onPressed:(){
             Navigator.push(context, MaterialPageRoute(builder: (context) => WelcomeView()));
           } , 
@@ -50,6 +51,7 @@ class LaunchView extends StatelessWidget {
           SizedBox(height: 12),
 
            ButtonWidget(
+            fontSize: 20,
           onPressed:(){
             Navigator.push(context, MaterialPageRoute(builder: (context) => CreateAccountView()));
           } , 
