@@ -1,5 +1,6 @@
 import 'package:finwise/core/constants/constantcolors.dart';
-import 'package:finwise/features/categories/view/food_view.dart';
+import 'package:finwise/features/categories/view/food/food_view.dart';
+import 'package:finwise/features/categories/view/transport/transport_view.dart';
 import 'package:finwise/features/categories/widgets/category_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -185,7 +186,7 @@ class Categoriesview extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 33),
                         child: CategoryWidget(
                           ontap: () {
-                            // Navigator.push(context, MaterialPageRoute(builder: (context) => FoodView()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => TransportView()));
                           },
                           image:Padding(
                             padding: const EdgeInsets.only(top: 26, left: 30, bottom: 26, right: 30),

@@ -3,7 +3,10 @@ import 'package:finwise/core/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
 class AddexpenseView extends StatelessWidget {
-  const AddexpenseView({super.key});
+   AddexpenseView({super.key, required this.option1, required this.option2, required this.option3});
+  String option1;
+  String option2;
+  String option3;
 
   @override
   Widget build(BuildContext context) {
@@ -140,7 +143,7 @@ class AddexpenseView extends StatelessWidget {
                               color: Color(0xFF00D09E),
                             ),
                           ),
-                          items: ["Brunch", "Lunch", "Dinner"]
+                          items: [option1,option2,option3]
                               .map(
                                 (item) => DropdownMenuItem(
                                   value: item,
@@ -149,6 +152,44 @@ class AddexpenseView extends StatelessWidget {
                               )
                               .toList(),
                           onChanged: (value) {},
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        top: 34,
+                        left: 60,
+                        bottom: 3,
+                      ),
+                      child: Text(
+                        'Amount',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Poppins",
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 50,
+                        right: 50,
+                        top: 3,
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide.none,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          filled: true,
+                          fillColor: ConstantColors.lighGreen,
+                          hintText: "",
+                          hintStyle: TextStyle(
+                            fontFamily: "League Spartan",
+                            fontWeight: FontWeight.w400,
+                            fontSize: 15,
+                          ),
                         ),
                       ),
                     ),

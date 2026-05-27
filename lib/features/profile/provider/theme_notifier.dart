@@ -12,3 +12,7 @@ class ThemeNotifier extends StateNotifier<ThemeMode> {
 final themeProvider = StateNotifierProvider<ThemeNotifier, ThemeMode>(
   (ref) => ThemeNotifier(),
 );
+
+
+final switchProvider = StateProvider<bool>((ref) => false);
+

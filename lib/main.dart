@@ -45,4 +45,4 @@ class MyApp extends ConsumerWidget {
      home: SplashView(),
     );
   }
-}
+} 

@@ -270,7 +270,8 @@ class FoodView extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 100,top: 20, bottom: 20,right: 100),
                         child: ButtonWidget(  
                           onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => AddexpenseView()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => AddexpenseView(
+                              option1: 'Brunch', option2: 'Lunch', option3: 'Dinner',)));
                           }, 
                         text: "Add Expenses", 
                         backgroundColor: ConstantColors.mainGreen,

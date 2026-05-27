@@ -1,6 +1,8 @@
 import 'package:finwise/core/constants/constantcolors.dart';
-import 'package:finwise/features/profile/view/editprofile_view.dart';
-import 'package:finwise/features/profile/view/settings_view.dart';
+import 'package:finwise/features/profile/view/edit_profile/editprofile_view.dart';
+import 'package:finwise/features/profile/view/help/help_and_faqs_view.dart';
+import 'package:finwise/features/profile/view/security/security_view.dart';
+import 'package:finwise/features/profile/view/settings/settings_view.dart';
 import 'package:finwise/features/profile/widgets/container_widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -94,9 +96,14 @@ class ProfileView extends StatelessWidget {
                                    text: "Edit profile"),
                               ),
 
-                                 ContainerWidgets(
-                                  icon: Icon(Icons.security_outlined, color: ConstantColors.backgroundColor,), 
-                                  text: "Security"),
+                                 InkWell(
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => SecurityView()));
+                                  },
+                                   child: ContainerWidgets(
+                                    icon: Icon(Icons.security_outlined, color: ConstantColors.backgroundColor,), 
+                                    text: "Security"),
+                                 ),
                                   InkWell(
                                     onTap: () {
                                       Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsView()));
@@ -105,9 +112,15 @@ class ProfileView extends StatelessWidget {
                                     Icon(Icons.settings, color: ConstantColors.backgroundColor, size: 28,),
                                      text: "Settings"),
                                   ),
-                                   ContainerWidgets(
-                                    icon: Icon(Icons.help_center, color: ConstantColors.backgroundColor,size: 28,),
-                                     text: "Help"),
+                                   InkWell(
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => HelpAndFaqsView()));
+                                      
+                                    },
+                                     child: ContainerWidgets(
+                                      icon: Icon(Icons.help_center, color: ConstantColors.backgroundColor,size: 28,),
+                                       text: "Help"),
+                                   ),
                                      ContainerWidgets(
                                       icon: Icon(Icons.logout, color: ConstantColors.backgroundColor,size: 28,), 
                                       text: "Log out")
